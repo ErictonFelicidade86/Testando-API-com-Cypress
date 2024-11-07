@@ -19,7 +19,7 @@ jobs:
         run: yarn install
 
       - name: Run E2E tests
-        run: node runner-electron.js
+        run: node ./cypress-automacao-teste/api/runner-electron.js
     env:
       TARGET_TOKEN_ELECTRON: ${{ secrets.TARGET_TOKEN_ELECTRON_API }}
     

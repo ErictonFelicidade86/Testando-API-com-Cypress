@@ -1,10 +1,11 @@
 {
-  "name": "Teste de Api",
+  "name": "Teste-de-Api",
   "version": "1.0.0",
   "description": "Automação de Teste com Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:test": "yarn cypress run",
+    "cypress:gui": "yarn cypress open"
   },
   "keywords": [
     "Cypress",

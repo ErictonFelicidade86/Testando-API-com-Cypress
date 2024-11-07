@@ -1,0 +1,24 @@
+{
+    "create": {
+        "firstname" : "Ton",
+        "lastname" : "Brito",
+        "totalprice" : 777,
+        "depositpaid" : true,
+        "bookingdates" : {
+            "checkin" : "2018-01-01",
+            "checkout" : "2024-11-07"
+        },
+        "additionalneeds" : "Breakfast"
+    },
+    "empty_body": {
+        "firstname" : "",
+        "lastname" : "",
+        "totalprice" : "",
+        "depositpaid" : "",
+        "bookingdates" : {
+            "checkin" : "",
+            "checkout" : ""
+        },
+        "additionalneeds" : ""
+    }
+}

@@ -1,4 +1,4 @@
-describe('GetbookingIds', () => {
+describe('Get Booking Ids', () => {
     let uniqueID
 
     it('Exibir todos os ids', () => {

@@ -10,15 +10,23 @@
         },
         "additionalneeds" : "Breakfast"
     },
-    "empty_body": {
-        "firstname" : "",
-        "lastname" : "",
-        "totalprice" : "",
-        "depositpaid" : "",
+    "user": {
+       "username" : "admin",
+       "password" : "password123"
+    },
+    "update": {
+        "firstname" : "Apollo",
+        "lastname" : "Brito",
+        "totalprice" : 777,
+        "depositpaid" : true,
         "bookingdates" : {
-            "checkin" : "",
-            "checkout" : ""
+            "checkin" : "2018-01-01",
+            "checkout" : "2024-11-07"
         },
-        "additionalneeds" : ""
+        "additionalneeds" : "Breakfast"
+    },
+    "partialUpdate": {
+        "firstname" : "Ponyo",
+        "lastname" : "Gata"
     }
 }

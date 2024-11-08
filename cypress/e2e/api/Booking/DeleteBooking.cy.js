@@ -1,37 +1,35 @@
-import createBooking from '../../../fixtures/bookingData.json';
-
-describe('UpdateBooking', () => {
-    
+describe('DeleteBooking', () => {
     before(function() {
         cy.User().then((res) => {
             const token = res.body.token;
             cy.wrap(token).as('token');
             cy.log('Captured Token:', token)
-        });
+        })
 
         cy.getIdAleatorio().then((res) => {
             const uniqueID = res.body[0].bookingid;
             cy.wrap(uniqueID).as('uniqueID');
             cy.log('Captured UniqueID:', uniqueID)
-        });
+        })
     });
-
-    it('Atualizando o booking', function () {
+   
+    it('Deletar um booking', () => {
         cy.get('@token').then((token) => {
             cy.get('@uniqueID').then((uniqueID) => {
                 cy.api({
-                    method: 'PUT',
-                    url: `booking/${uniqueID}`, 
-                    body: createBooking.update,
+                    method: 'DELETE',
+                    url: `booking/${uniqueID}`,
                     headers: {
-                        'Cookie': `token=${token}`, 
+                        'Cookie': `token=${token}`,
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
                 }).then((res) => {
-                    expect(res.status).to.eq(200);
-                });
+                    cy.log('Response Status:', res.status)
+                    cy.log('Response Body:', res.body)
+                    expect(res.status).to.eq(201);
+                })
             });
         });
-    });
-});
+    })
+})

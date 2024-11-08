@@ -20,9 +20,9 @@ describe('UpdateBooking', () => {
         cy.get('@token').then((token) => {
             cy.get('@uniqueID').then((uniqueID) => {
                 cy.api({
-                    method: 'PUT',
-                    url: `booking/${uniqueID}`, 
-                    body: createBooking.update,
+                    method: 'PATCH',
+                    url: `booking/${uniqueID}`,
+                    body: createBooking.partialUpdate,
                     headers: {
                         'Cookie': `token=${token}`, 
                         'Content-Type': 'application/json',

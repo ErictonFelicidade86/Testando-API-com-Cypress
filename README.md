@@ -1,4 +1,4 @@
-# cypress-automacao-teste
+# Treinamento de Automação de Teste com Cypress
 
 ## Sobre
 

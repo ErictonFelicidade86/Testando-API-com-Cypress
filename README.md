@@ -37,6 +37,6 @@ npx cypress run
   <img align="center" alt="Ton-Git" heigh="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
   <img align="center" alt="Ton-Node" heigh="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
   <img align="center" alt="Ton-Yarn" heigh="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yarn/yarn-original-wordmark.svg" />
-  <img align="center" alt="Ton-Yarn" heigh="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
+  <img align="center" alt="Ton-Github Actions" heigh="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" />
 </div>
 
